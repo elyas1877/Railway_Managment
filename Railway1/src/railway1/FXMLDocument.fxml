@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="714.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="railway_.FXMLDocumentController">
+   <children>
+      <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="اضافه کردن">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="لوکوموتیوران">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox layoutX="307.0" layoutY="24.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox spacing="20.0">
+                                                   <children>
+                                                      <TextField promptText="کدپرسنلی" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                   <children>
+                                                      <TextField promptText="نام" />
+                                                      <TextField layoutX="10.0" layoutY="10.0" promptText="نام خانوادگی" />
+                                                      <TextField layoutX="199.0" layoutY="30.0" promptText="شماره تلفن" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <ComboBox prefWidth="150.0" promptText="انتخاب شرکت" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" spacing="20.0">
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="قطار">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox layoutX="307.0" layoutY="24.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="کدقطار" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="نام قطار" />
+                                                            <ComboBox prefWidth="150.0" promptText="انتخاب شرکت" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <ComboBox prefWidth="150.0" promptText="کلاس قطار" />
+                                                            <Spinner editable="true" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <Button mnemonicParsing="false" text="ثبت">
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                               </padding>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="شرکت">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox layoutX="307.0" layoutY="24.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="کدشرکت" />
+                                                            <TextField promptText="نام" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="50.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <Button mnemonicParsing="false" text="ثبت">
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                               </padding>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="مشتری">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox layoutX="307.0" layoutY="24.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="کدملی" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="نام" />
+                                                            <TextField layoutX="10.0" layoutY="10.0" promptText="نام خانوادگی" />
+                                                            <TextField layoutX="199.0" layoutY="30.0" promptText="شماره تلفن" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <Button mnemonicParsing="false" text="ثبت">
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                               </padding>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="مقصد">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox layoutX="307.0" layoutY="24.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="کد مقصد" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <children>
+                                                            <TextField promptText="نام" />
+                                                            <TextField layoutX="10.0" layoutY="10.0" promptText="قیمت" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" spacing="20.0">
+                                                         <padding>
+                                                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <Button mnemonicParsing="false" text="ثبت">
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                               </padding>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="ویرایش">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="لوکوموتیوران">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" spacing="10.0">
+                                                   <children>
+                                                      <TextField editable="false" promptText="کدپرسنلی">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام خانوادگی">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="شماره تلفن">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <ComboBox prefWidth="150.0" promptText="انتخاب شرکت" />
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView HBox.hgrow="ALWAYS">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="کدپرسنلی" />
+                                                    <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="نام خانوادگی" />
+                                                      <TableColumn prefWidth="75.0" text="شماره تلفن" />
+                                                      <TableColumn prefWidth="75.0" text="شرکت" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="قطار">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" spacing="10.0">
+                                                   <children>
+                                                      <TextField editable="false" promptText="کدقطار">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <ComboBox prefWidth="150.0" promptText="انتخاب شرکت" />
+                                                      <ComboBox layoutX="14.0" layoutY="116.0" prefWidth="150.0" promptText="کلاس قطار" />
+                                                      <Spinner />
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدقطار" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="تعداد واگن" />
+                                                      <TableColumn prefWidth="75.0" text="کلاس قطار" />
+                                                      <TableColumn prefWidth="75.0" text="شرکت" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="شرکت">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" spacing="10.0">
+                                                   <children>
+                                                      <TextField editable="false" promptText="کدشرکت">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدشرکت" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="مشتری">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" spacing="10.0">
+                                                   <children>
+                                                      <TextField editable="false" promptText="کدملی">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام خانوادگی">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="شماره تلفن">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدملی" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="نام خانوادگی" />
+                                                      <TableColumn prefWidth="75.0" text="شماره تلفن" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="مقصد">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" spacing="10.0">
+                                                   <children>
+                                                      <TextField editable="false" promptText="کدمقصد">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="نام">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextField promptText="قیمت">
+                                                         <VBox.margin>
+                                                            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="ثبت">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView HBox.hgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدپرسنلی" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="قیمت" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="لیست وجستوجو">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="لوکوموتیوران">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER">
+                                                   <children>
+                                                      <TextField alignment="CENTER" HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="5.0" right="20.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="جستوجو">
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدپرسنلی" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="نام خانوادگی" />
+                                                      <TableColumn prefWidth="75.0" text="شماره تلفن" />
+                                                      <TableColumn prefWidth="75.0" text="شرکت" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="قطار">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER">
+                                                   <children>
+                                                      <TextField HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="5.0" right="20.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="جستوجو">
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدقطار" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="تعداد واگن" />
+                                                      <TableColumn prefWidth="75.0" text="کلاس قطار" />
+                                                      <TableColumn prefWidth="75.0" text="شرکت" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="شرکت">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER">
+                                                   <children>
+                                                      <TextField HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="5.0" right="20.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="جستوجو">
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدشرکت" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="مشتری">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER">
+                                                   <children>
+                                                      <TextField HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="5.0" right="20.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="جستوجو">
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدشرکت" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="مقصد">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER">
+                                                   <children>
+                                                      <TextField HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="5.0" right="20.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button mnemonicParsing="false" text="جستوجو">
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="کدپرسنلی" />
+                                                      <TableColumn prefWidth="75.0" text="نام" />
+                                                      <TableColumn prefWidth="75.0" text="قیمت" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="سفر">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="270.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="گروه سفر">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane layoutX="150.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <tabs>
+                                              <Tab text="ثبت">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="TOP_CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                                                     <children>
+                                                                        <ComboBox prefWidth="150.0" promptText="قطار" />
+                                                                        <ComboBox layoutX="10.0" layoutY="10.0" prefWidth="150.0" promptText="لوکوموتیوران" />
+                                                                        <JFXDatePicker defaultColor="BLACK" promptText="تاریخ" />
+                                                                        <JFXTimePicker defaultColor="BLACK" promptText="ساعت" />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                                  <Button mnemonicParsing="false" text="ثبت">
+                                                                     <VBox.margin>
+                                                                        <Insets />
+                                                                     </VBox.margin>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                                                     </padding>
+                                                                  </Button>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                                <Tab text="لیست">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <HBox alignment="TOP_RIGHT">
+                                                                     <children>
+                                                                        <JFXDatePicker promptText="تاریخ" />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                                  <TableView VBox.vgrow="ALWAYS">
+                                                                     <columns>
+                                                                        <TableColumn prefWidth="75.0" text="کدقطار" />
+                                                                        <TableColumn prefWidth="75.0" text="نام قطار" />
+                                                                        <TableColumn prefWidth="75.0" text="کد لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام خانوادگی لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="تاریخ" />
+                                                                     </columns>
+                                                                     <columnResizePolicy>
+                                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                     </columnResizePolicy>
+                                                                  </TableView>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="ثبت سفر">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                                   <children>
+                                                      <ComboBox layoutX="180.0" layoutY="20.0" prefWidth="150.0" promptText="مقصد" />
+                                                      <JFXDatePicker defaultColor="BLACK" promptText="تاریخ" />
+                                                      <JFXTimePicker defaultColor="BLACK" promptText="ساعت" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Button mnemonicParsing="false" text="ثبت">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                                   </padding>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets top="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="بلیت">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <TextField promptText="کدمشتری" />
+                                                            <ComboBox promptText="کد سفر">
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </ComboBox>
+                                                            <Button mnemonicParsing="false" text="ثبت">
+                                                               <padding>
+                                                                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                                               </padding>
+                                                               <VBox.margin>
+                                                                  <Insets top="20.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                         </children>
+                                                      </VBox>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                      <VBox alignment="TOP_CENTER" layoutX="564.0" layoutY="20.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <TextField promptText="سریال بلیت" />
+                                                            <Button mnemonicParsing="false" text="کنسل">
+                                                               <padding>
+                                                                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                                               </padding>
+                                                               <VBox.margin>
+                                                                  <Insets top="20.0" />
+                                                               </VBox.margin>
+                                                            </Button>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets top="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="لیست">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane layoutX="226.0" layoutY="109.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <tabs>
+                                              <Tab text="سفرها">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <HBox alignment="TOP_RIGHT">
+                                                                     <children>
+                                                                        <JFXDatePicker />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                                  <TableView VBox.vgrow="ALWAYS">
+                                                                     <columns>
+                                                                        <TableColumn prefWidth="75.0" text="کدقطار" />
+                                                                        <TableColumn prefWidth="75.0" text="نام قطار" />
+                                                                        <TableColumn prefWidth="75.0" text="کد لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام خانوادگی لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="مقصد" />
+                                                                        <TableColumn prefWidth="75.0" text="کدسفر" />
+                                                                     </columns>
+                                                                     <columnResizePolicy>
+                                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                     </columnResizePolicy>
+                                                                  </TableView>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                              <Tab text="بلیت ها">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <HBox spacing="10.0">
+                                                                     <children>
+                                                                        <TextField promptText="کدملی" />
+                                                                        <JFXDatePicker promptText="تاریخ" />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                                  <TableView VBox.vgrow="ALWAYS">
+                                                                     <columns>
+                                                                        <TableColumn prefWidth="75.0" text="کدقطار" />
+                                                                        <TableColumn prefWidth="75.0" text="نام قطار" />
+                                                                        <TableColumn prefWidth="75.0" text="کد لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="نام خانوادگی لوکوموتیوران" />
+                                                                        <TableColumn prefWidth="75.0" text="تاریخ" />
+                                                                     </columns>
+                                                                     <columnResizePolicy>
+                                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                     </columnResizePolicy>
+                                                                  </TableView>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
